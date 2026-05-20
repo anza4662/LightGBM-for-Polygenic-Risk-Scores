@@ -19,4 +19,7 @@ Rscript lgbmPRS.R "<path_to_tabular_data>" "<path_to_outputs>"
 ```
 
 # Output
-...
+
+- A file *validationResults.tab* that has the hyperparamters and the resulting AUC for the validation data set on the final boosting iteration *M*.
+- A file *featureImportance.tab* that has feature importance information on the final model.
+- A file *featureImportance.png* which is a plot of feature importance as measured by Gain restricted to top 20.

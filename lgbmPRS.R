@@ -157,7 +157,7 @@ imp <- lgb.importance(lgbFinal, percentage = TRUE)
 colnames(imp)[1] <- "newName"
 imp <- merge(imp, colnamesNewAndOrig)
 
-write.table(imp, "/nfs/GENETEC/PRSes/Scripts/MLmethods/lgbm/results/featureImportance.tab",
+write.table(imp, paste0(outDir,"/featureImportance.tab"),
            quote = F, col.names = T, row.names = F)
 
 top <- imp %>% top_n(n = 20, wt = Gain) %>% mutate(origName = fct_reorder(origName, Gain))
