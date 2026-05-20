@@ -25,6 +25,6 @@ Rscript lgbmPRS.R "<path_to_tabular_data>" "<path_to_outputs>"
 - A file *featureImportance.png* which is a plot of feature importance as measured by Gain restricted to top 20.
 
 # Runtime 
-Runtime depends on how many SNPs you are using and how many observations you have.
+Runtime depends on how many SNPs you are using and how many observations you have. If you have the time please feel free to make a parralellized version. :)
 
 An example: Using 200k SNPs and 10k observations with 36 threads and 150GB of RAM takes approx 4 hours to run.
